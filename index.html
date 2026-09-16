@@ -1,0 +1,2822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO tags -->
+<title>Cat Hydration Calculator — How Much Water Should My Cat Drink? | PurrHydrate</title>
+<meta name="description" content="Free cat hydration calculator. Enter your cat's weight, diet, and age to get a daily water target in ounces and mL, plus vet-informed tips and hydration gear to help them drink more.">
+<meta name="keywords" content="cat hydration calculator, how much water should a cat drink, cat water needs calculator, cat dehydration, cat water fountain">
+<link rel="canonical" href="https://www.justpurrhydrate.com/">
+
+<!-- Open Graph / Facebook, Messenger, WhatsApp, etc. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PurrHydrate">
+<meta property="og:url" content="https://www.justpurrhydrate.com/">
+<meta property="og:title" content="Cat Hydration Calculator — How Much Water Should My Cat Drink?">
+<meta property="og:description" content="Enter your cat's weight, diet, and age to get a real daily water target in ounces or mL — plus what to do if your cat isn't drinking enough.">
+<meta property="og:image" content="https://www.justpurrhydrate.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PurrHydrate cat hydration calculator preview">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cat Hydration Calculator — How Much Water Should My Cat Drink?">
+<meta name="twitter:description" content="Enter your cat's weight, diet, and age to get a real daily water target in ounces or mL.">
+<meta name="twitter:image" content="https://www.justpurrhydrate.com/og-image.png">
+
+<!-- Favicon: teal water-drop cat mark, inline so no separate file is required -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 4C11 4 5 12 5 20c0 8.5 6.5 16 15 16s15-7.5 15-16C35 12 29 4 20 4Z' fill='%232F7A78'/%3E%3Cpath d='M13 15c1.5-2 3-3 3-3s-1 2.5-0.5 4.5C16 18 17.5 19 20 19s4-1 4.5-2.5C25 14.5 24 12 24 12s1.5 1 3 3' stroke='%23FAF7F1' stroke-width='1.4' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='16.5' cy='21' r='1.3' fill='%23FAF7F1'/%3E%3Ccircle cx='23.5' cy='21' r='1.3' fill='%23FAF7F1'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23FAF7F1'/%3E%3Cpath d='M20 5C12 5 7 12 7 19c0 7.5 5.8 14 13 14s13-6.5 13-14C33 12 28 5 20 5Z' fill='%232F7A78'/%3E%3Cpath d='M14 15.5c1.3-1.8 2.6-2.6 2.6-2.6s-0.9 2.2-0.4 4c0.5 1.3 1.8 2.3 4 2.3s3.5-1 4-2.3c0.5-1.8-0.4-4-0.4-4s1.3 0.8 2.6 2.6' stroke='%23FAF7F1' stroke-width='1.3' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='16.8' cy='20.5' r='1.2' fill='%23FAF7F1'/%3E%3Ccircle cx='23.2' cy='20.5' r='1.2' fill='%23FAF7F1'/%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2F7A78">
+
+<!-- Using system fonts only — no external font requests, so no visitor data (IP address)
+     is ever sent to a third party just to render text. -->
+<style>
+  :root {
+    --paper: #FAF7F1;
+    --paper-warm: #F3ECDE;
+    --ink: #1F2E2B;
+    --ink-soft: #4C5A56;
+    --teal: #2F7A78;
+    --teal-deep: #1B4F4D;
+    --sand: #E9D7B6;
+    --sand-deep: #D9BE8C;
+    --coral: #DD7C58;
+    --line: #DCD2B9;
+    --white: #FFFFFF;
+    --radius-s: 6px;
+    --radius-m: 14px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  a { color: var(--teal-deep); }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- Header ---------- */
+  header.site {
+    padding: 26px 0 10px;
+  }
+  header.site .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--teal-deep);
+  }
+  .logo svg { width: 30px; height: 30px; }
+  nav.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px 20px;
+  }
+  nav.site-nav a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  nav.site-nav a:hover { color: var(--teal-deep); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 56px 0 40px;
+  }
+  .hero .wrap {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: clamp(2.1rem, 4vw, 3.1rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+  .hero p.lede {
+    margin-top: 18px;
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    max-width: 46ch;
+  }
+  .hero .cta-row {
+    margin-top: 28px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .btn-primary {
+    background: var(--teal);
+    color: var(--white);
+    border: none;
+    padding: 14px 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+  .btn-primary:hover { background: var(--teal-deep); }
+  .btn-primary:active { transform: translateY(1px); }
+  .btn-primary:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible {
+    outline: 3px solid var(--coral);
+    outline-offset: 2px;
+  }
+  .hero .hint {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-art { display: flex; justify-content: center; }
+  .hero-art svg { width: 100%; max-width: 340px; height: auto; }
+
+  /* ---------- Calculator ---------- */
+  .calc-section {
+    padding: 10px 0 60px;
+  }
+  .calc-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-m);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .calc-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+  .calc-card .section-note {
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    margin-bottom: 20px;
+  }
+
+  .field { margin-bottom: 20px; }
+  .field label {
+    display: block;
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .weight-row {
+    display: flex;
+    gap: 10px;
+  }
+  .weight-row input[type="number"] {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .unit-toggle {
+    display: flex;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+  }
+  .unit-toggle button {
+    border: none;
+    background: var(--paper);
+    padding: 0 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .unit-toggle button.active {
+    background: var(--teal);
+    color: var(--white);
+  }
+
+  .choice-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    padding: 12px 14px;
+    cursor: pointer;
+    background: var(--paper);
+    transition: border-color 0.18s ease, background-color 0.18s ease,
+                transform 0.15s ease, box-shadow 0.18s ease;
+    will-change: transform;
+  }
+  .choice:hover {
+    border-color: var(--sand-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(31, 46, 43, 0.08);
+  }
+  .choice:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 1px 3px rgba(31, 46, 43, 0.08);
+  }
+  .choice.selected {
+    border-color: var(--teal);
+    background: #EEF6F5;
+    box-shadow: 0 2px 8px rgba(47, 122, 120, 0.15);
+  }
+  .choice.selected:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(47, 122, 120, 0.2);
+  }
+  .choice input { margin-top: 3px; accent-color: var(--teal); }
+  .choice .choice-text strong { display: block; font-size: 0.95rem; }
+  .choice .choice-text span { font-size: 0.85rem; color: var(--ink-soft); }
+
+  .calc-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 6px;
+    border-top: 1px solid var(--line);
+    margin-top: 4px;
+  }
+
+  /* ---------- Result ---------- */
+  .result-section { padding: 0 0 60px; display: none; }
+  .result-section.visible { display: block; }
+  .result-card {
+    background: var(--teal-deep);
+    color: var(--paper);
+    border-radius: var(--radius-m);
+    padding: 44px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .result-card .result-label {
+    font-size: 0.95rem;
+    color: #BFE0DD;
+    margin-bottom: 6px;
+  }
+  .result-card .result-number {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(2.6rem, 5vw, 3.8rem);
+    line-height: 1;
+    color: var(--white);
+  }
+  .result-card .result-number small {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #BFE0DD;
+    margin-left: 6px;
+  }
+  .result-breakdown {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .result-breakdown .row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.92rem;
+    color: #D9EFEC;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+  }
+  .result-breakdown .row strong { color: var(--white); }
+
+  .dual-result {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .dual-result .dual-label {
+    font-size: 0.85rem;
+    color: #BFE0DD;
+    margin-bottom: 12px;
+  }
+  .dual-tiles {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: center;
+  }
+  .dual-tile {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: var(--radius-s);
+    padding: 16px 18px;
+  }
+  .dual-tile .tile-label {
+    font-size: 0.82rem;
+    color: #BFE0DD;
+    margin-bottom: 6px;
+  }
+  .dual-tile .tile-value {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 1.1;
+  }
+  .dual-tile .tile-value small {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #D9EFEC;
+    margin-left: 4px;
+  }
+  .dual-tile .tile-sub {
+    font-size: 0.8rem;
+    color: #A9CFCB;
+    margin-top: 6px;
+  }
+  .dual-or {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.95rem;
+    color: #8FCFCB;
+    text-align: center;
+  }
+  .dual-note {
+    font-size: 0.8rem;
+    color: #A9CFCB;
+    margin-top: 12px;
+  }
+
+  .bowl-wrap { display: flex; justify-content: center; }
+  .bowl-wrap svg { width: 100%; max-width: 240px; height: auto; }
+  #bowl-fill {
+    transition: height 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),
+                y 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .result-note {
+    grid-column: 1 / -1;
+    font-size: 0.85rem;
+    color: #A9CFCB;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 16px;
+    margin-top: 6px;
+  }
+
+  .result-reset-row {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--paper);
+    border: 1px solid rgba(250,247,241,0.5);
+    padding: 11px 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-secondary:hover {
+    background: rgba(250,247,241,0.12);
+    border-color: var(--paper);
+  }
+
+  .result-share {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .result-share .share-label {
+    font-size: 0.85rem;
+    color: #BFE0DD;
+    margin-bottom: 12px;
+  }
+  .share-link-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .share-link-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: var(--radius-s);
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+  }
+  .share-link-row input:focus { outline: 2px solid var(--sand-deep); }
+  .share-actions-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .share-msg {
+    font-size: 0.85rem;
+    color: #D9EFEC;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-section { padding: 10px 0 60px; }
+  .faq-section .section-head { max-width: 62ch; margin-bottom: 30px; }
+  .faq-section h2 { font-size: 1.7rem; }
+  .faq-section .section-head p { color: var(--ink-soft); margin-top: 10px; }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.02rem;
+    color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::marker { content: ''; }
+  .faq-item summary:focus-visible {
+    outline: 3px solid var(--coral);
+    outline-offset: -2px;
+  }
+  .faq-item .faq-chevron {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    color: var(--teal-deep);
+    transition: transform 0.2s ease;
+  }
+  .faq-item[open] .faq-chevron { transform: rotate(180deg); }
+  .faq-item .faq-answer {
+    padding: 0 22px 20px;
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .faq-item .faq-answer p { margin: 0 0 10px; }
+  .faq-item .faq-answer p:last-child { margin-bottom: 0; }
+  .faq-item .faq-answer a { font-weight: 600; }
+
+  /* ---------- Products ---------- */
+  /* ---------- Dehydration signs ---------- */
+  .signs-section { padding: 10px 0 60px; }
+  .signs-section .section-head {
+    max-width: 62ch;
+    margin-bottom: 30px;
+  }
+  .signs-section h2 { font-size: 1.7rem; }
+  .signs-section .section-head p {
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+
+  .signs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .sign-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    padding: 22px 20px;
+  }
+  .sign-card .icon {
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--sand);
+    border-radius: var(--radius-s);
+    margin-bottom: 14px;
+  }
+  .sign-card .icon svg { width: 22px; height: 22px; }
+  .sign-card strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  .sign-card span {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  .vet-warning {
+    margin-top: 26px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: #FBEDE6;
+    border: 1px solid #EFC2AC;
+    border-left: 5px solid var(--coral);
+    border-radius: var(--radius-s);
+    padding: 20px 24px;
+  }
+  .vet-warning .icon {
+    flex-shrink: 0;
+    width: 34px; height: 34px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--coral);
+  }
+  .vet-warning .icon svg { width: 30px; height: 30px; }
+  .vet-warning strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.08rem;
+    color: #8A3A1F;
+    margin-bottom: 6px;
+  }
+  .vet-warning span {
+    font-size: 0.94rem;
+    color: #7A4230;
+    line-height: 1.55;
+  }
+
+  /* ---------- Medical conditions & water intake ---------- */
+  .conditions-section { padding: 10px 0 60px; }
+  .conditions-section .section-head { max-width: 66ch; margin-bottom: 30px; }
+  .conditions-section h2 { font-size: 1.7rem; }
+  .conditions-section .section-head p { color: var(--ink-soft); margin-top: 10px; }
+
+  .condition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+  .condition-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-m);
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+  }
+  .condition-card .cond-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .condition-card .cond-icon {
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--sand);
+    border-radius: var(--radius-s);
+    flex-shrink: 0;
+  }
+  .condition-card .cond-icon svg { width: 22px; height: 22px; }
+  .condition-card h3 {
+    font-size: 1.08rem;
+    margin: 0;
+  }
+  .condition-card .cond-abbr {
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-top: 2px;
+  }
+  .water-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: #E4F1F0;
+    color: var(--teal-deep);
+    white-space: nowrap;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  .condition-card p {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+  }
+  .condition-card .cond-watch {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .condition-card ul {
+    font-size: 0.87rem;
+    color: var(--ink-soft);
+    padding-left: 18px;
+    margin: 0;
+  }
+  .condition-card li { margin-bottom: 4px; }
+
+  .conditions-callout {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: #FBEDE6;
+    border: 1px solid #EFC2AC;
+    border-left: 5px solid var(--coral);
+    border-radius: var(--radius-s);
+    padding: 22px 26px;
+  }
+  .conditions-callout .icon {
+    flex-shrink: 0;
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--coral);
+  }
+  .conditions-callout .icon svg { width: 30px; height: 30px; }
+  .conditions-callout strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.08rem;
+    color: #8A3A1F;
+    margin-bottom: 8px;
+  }
+  .conditions-callout p {
+    font-size: 0.94rem;
+    color: #7A4230;
+    line-height: 1.6;
+    margin: 0 0 10px;
+  }
+  .conditions-callout p:last-child { margin-bottom: 0; }
+
+  /* ---------- Practical hydration tips ---------- */
+  .tips-section { padding: 10px 0 60px; }
+  .tips-section .section-head {
+    max-width: 62ch;
+    margin-bottom: 30px;
+  }
+  .tips-section h2 { font-size: 1.7rem; }
+  .tips-section .section-head p {
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .tip-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    padding: 22px 20px;
+  }
+  .tip-card .icon {
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    background: #E4F1F0;
+    border-radius: var(--radius-s);
+    margin-bottom: 14px;
+  }
+  .tip-card .icon svg { width: 22px; height: 22px; }
+  .tip-card strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  .tip-card span {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Whisker fatigue assessment ---------- */
+  .whisker-section { padding: 10px 0 60px; }
+  .whisker-section .section-head {
+    max-width: 62ch;
+    margin-bottom: 30px;
+  }
+  .whisker-section h2 { font-size: 1.7rem; }
+  .whisker-section .section-head p {
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+
+  .whisker-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-m);
+    padding: 36px;
+  }
+  .whisker-card .field { margin-bottom: 24px; }
+  .whisker-card .field:last-of-type { margin-bottom: 0; }
+  .whisker-card .field > label {
+    display: block;
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--ink);
+  }
+  .whisker-card .choice-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+  }
+  .whisker-actions {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+  }
+
+  .whisker-result { display: none; margin-top: 18px; }
+  .whisker-result.visible { display: block; }
+
+  .whisker-verdict {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    border-radius: var(--radius-s);
+    padding: 20px 24px;
+    margin-bottom: 20px;
+  }
+  .whisker-verdict.risk {
+    background: #FBEDE6;
+    border: 1px solid #EFC2AC;
+    border-left: 5px solid var(--coral);
+  }
+  .whisker-verdict.ok {
+    background: #EAF5F3;
+    border: 1px solid #BFE0DD;
+    border-left: 5px solid var(--teal);
+  }
+  .whisker-verdict .icon { flex-shrink: 0; width: 30px; height: 30px; }
+  .whisker-verdict.risk .icon { color: var(--coral); }
+  .whisker-verdict.ok .icon { color: var(--teal-deep); }
+  .whisker-verdict .icon svg { width: 28px; height: 28px; }
+  .whisker-verdict strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.08rem;
+    margin-bottom: 6px;
+  }
+  .whisker-verdict.risk strong { color: #8A3A1F; }
+  .whisker-verdict.ok strong { color: var(--teal-deep); }
+  .whisker-verdict span { font-size: 0.94rem; color: var(--ink-soft); line-height: 1.55; }
+
+  .whisker-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .whisker-tip {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    padding: 16px 18px;
+  }
+  .whisker-tip .icon {
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--sand);
+    border-radius: var(--radius-s);
+  }
+  .whisker-tip .icon svg { width: 20px; height: 20px; }
+  .whisker-tip strong { display: block; font-size: 0.98rem; margin-bottom: 4px; }
+  .whisker-tip span { font-size: 0.88rem; color: var(--ink-soft); }
+
+  /* ---------- Hydration & litter tracker ---------- */
+  .tracker-section { padding: 10px 0 60px; }
+  .tracker-section .section-head { max-width: 64ch; margin-bottom: 30px; }
+  .tracker-section h2 { font-size: 1.7rem; }
+  .tracker-section .section-head p { color: var(--ink-soft); margin-top: 10px; }
+
+  .tracker-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-m);
+    padding: 36px;
+  }
+
+  .tracker-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 20px;
+  }
+  .tracker-form .field { margin: 0; }
+  .tracker-form .field.full { grid-column: 1 / -1; }
+  .tracker-form label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: var(--ink);
+  }
+  .tracker-form input,
+  .tracker-form select,
+  .tracker-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    font-size: 0.94rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .tracker-form textarea { resize: vertical; min-height: 70px; }
+  .tracker-form .hint-sm { font-size: 0.8rem; color: var(--ink-soft); margin-top: 5px; }
+
+  .tracker-actions-row {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .tracker-alert {
+    margin-top: 26px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    border-radius: var(--radius-s);
+    padding: 18px 22px;
+  }
+  .tracker-alert.urgent { background: #FBEDE6; border: 1px solid #EFC2AC; border-left: 5px solid var(--coral); }
+  .tracker-alert.watch { background: #FBF3E1; border: 1px solid #EFDCAC; border-left: 5px solid #C99A2E; }
+  .tracker-alert .icon { flex-shrink: 0; width: 26px; height: 26px; }
+  .tracker-alert.urgent .icon { color: var(--coral); }
+  .tracker-alert.watch .icon { color: #A9791F; }
+  .tracker-alert .icon svg { width: 26px; height: 26px; }
+  .tracker-alert strong { display: block; font-family: Georgia, 'Times New Roman', serif; font-weight: 500; font-size: 1.02rem; margin-bottom: 4px; }
+  .tracker-alert.urgent strong { color: #8A3A1F; }
+  .tracker-alert.watch strong { color: #6B4E10; }
+  .tracker-alert span { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.5; }
+
+  .tracker-chart-wrap {
+    margin-top: 30px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+  }
+  .tracker-chart-wrap h3 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+  .tracker-chart-wrap .hint-sm { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 14px; }
+  .tracker-chart-wrap svg { width: 100%; height: auto; display: block; }
+
+  .tracker-log {
+    margin-top: 30px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+  }
+  .tracker-log-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .tracker-log-head h3 { font-size: 1.05rem; }
+  .tracker-log-tools { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .tracker-empty {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    padding: 20px;
+    text-align: center;
+    background: var(--paper);
+    border: 1px dashed var(--line);
+    border-radius: var(--radius-s);
+  }
+
+  .tracker-entries { display: flex; flex-direction: column; gap: 10px; }
+  .tracker-entry {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 16px;
+    align-items: center;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    padding: 14px 16px;
+  }
+  .tracker-entry .entry-date {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+  .tracker-entry .entry-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: #E4F1F0;
+    color: var(--teal-deep);
+    white-space: nowrap;
+  }
+  .badge.badge-warn { background: #FBEDE6; color: #8A3A1F; }
+  .badge.badge-neutral { background: var(--sand); color: #6B4E10; }
+  .tracker-entry .entry-notes {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+  .tracker-entry .entry-delete {
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    cursor: pointer;
+    font-size: 0.82rem;
+    text-decoration: underline;
+    padding: 4px;
+  }
+  .tracker-entry .entry-delete:hover { color: var(--coral); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--teal-deep);
+    border: 1px solid var(--teal);
+    padding: 10px 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .btn-outline:hover { background: var(--teal); color: var(--white); }
+  .btn-text-danger {
+    background: transparent;
+    border: none;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 6px;
+  }
+  .btn-text-danger:hover { color: var(--coral); }
+
+  .tracker-storage-note {
+    margin-top: 22px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  /* Printable report — hidden on screen, shown only when a dedicated
+     "Print / Save as PDF" button populates it and triggers print */
+  #print-area { display: none; }
+
+  @media print {
+    /* Generic cleanup for a plain browser print (Ctrl/Cmd+P) with no dedicated
+       report generated: strip chrome and interactive controls, keep the
+       informational content (signs, conditions, tips, results, log entries) readable. */
+    header.site,
+    .hero,
+    footer.site,
+    nav.site-nav,
+    button,
+    input:not(#share-link-input),
+    select,
+    textarea,
+    .calc-actions,
+    .tracker-actions-row,
+    .tracker-log-tools,
+    .whisker-actions,
+    .result-share,
+    .result-reset-row,
+    .unit-toggle {
+      display: none !important;
+    }
+
+    body { background: #fff; }
+    a { color: #1B4F4D; }
+
+    /* Dark/tinted cards read poorly on paper — force high-contrast, ink-on-white for print */
+    .result-card,
+    .whisker-verdict,
+    .tracker-alert,
+    .conditions-callout,
+    .vet-warning,
+    .dual-result,
+    .dual-tile {
+      background: #fff !important;
+      color: #1F2E2B !important;
+      border: 1px solid #999 !important;
+      box-shadow: none !important;
+    }
+    .result-card *,
+    .whisker-verdict *,
+    .tracker-alert *,
+    .conditions-callout *,
+    .dual-result *,
+    .dual-tile * {
+      color: #1F2E2B !important;
+    }
+
+    /* Dedicated report mode: a Print/Save-as-PDF button has populated #print-area —
+       show only that curated report and hide the rest of the page entirely. */
+    body.print-target-active > *:not(#print-area) { display: none !important; }
+    body.print-target-active #print-area {
+      display: block !important;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1F2E2B;
+    }
+    body.print-target-active #print-area h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; margin-bottom: 2px; }
+    body.print-target-active #print-area .print-meta { font-size: 0.85rem; color: #4C5A56; margin-bottom: 18px; }
+    body.print-target-active #print-area table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    body.print-target-active #print-area th,
+    body.print-target-active #print-area td { border: 1px solid #DCD2B9; padding: 6px 8px; text-align: left; vertical-align: top; }
+    body.print-target-active #print-area th { background: #F3ECDE; }
+    body.print-target-active #print-area svg { width: 100%; height: auto; margin: 16px 0 22px; }
+  }
+
+  /* ---------- Products ----------
+     Removed for now until an affiliate program is approved and real links
+     are ready. The full product-card/product-list/price-badge styling and
+     the matching HTML section can be restored later — ask to bring it back. */
+
+  /* ---------- Footer ---------- */
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding: 34px 0 0;
+  }
+  footer.site .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  footer.site p {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0;
+  }
+  footer.site .footer-bottom {
+    border-top: 1px solid var(--line);
+    margin-top: 26px;
+    padding: 18px 0 30px;
+  }
+  footer.site .footer-bottom .wrap {
+    align-items: center;
+  }
+  footer.site .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 22px;
+  }
+  footer.site .footer-links a {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  footer.site .footer-links a:hover {
+    color: var(--teal-deep);
+    text-decoration: underline;
+  }
+  footer.site .footer-copyright {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 780px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .hero-art { order: -1; }
+    .calc-card { grid-template-columns: 1fr; padding: 28px; }
+    .result-card { grid-template-columns: 1fr; padding: 30px; }
+    .share-link-row { flex-direction: column; }
+    .bowl-wrap { order: -1; }
+    .dual-tiles { grid-template-columns: 1fr; }
+    .dual-or { padding: 2px 0; }
+    .signs-grid { grid-template-columns: 1fr; }
+    .condition-grid { grid-template-columns: 1fr; }
+    .conditions-callout { flex-direction: column; }
+    .tips-grid { grid-template-columns: 1fr; }
+    .whisker-card { padding: 26px; }
+    .whisker-card .choice-group { grid-template-columns: 1fr; }
+    .tracker-card { padding: 24px; }
+    .tracker-form { grid-template-columns: 1fr; }
+    .tracker-entry { grid-template-columns: 1fr; }
+    .tracker-entry .entry-delete { justify-self: flex-start; }
+    .vet-warning { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4C11 4 5 12 5 20c0 8.5 6.5 16 15 16s15-7.5 15-16C35 12 29 4 20 4Z" fill="#2F7A78"/>
+        <path d="M13 15c1.5-2 3-3 3-3s-1 2.5-0.5 4.5C16 18 17.5 19 20 19s4-1 4.5-2.5C25 14.5 24 12 24 12s1.5 1 3 3" stroke="#FAF7F1" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <circle cx="16.5" cy="21" r="1.3" fill="#FAF7F1"/>
+        <circle cx="23.5" cy="21" r="1.3" fill="#FAF7F1"/>
+      </svg>
+      PurrHydrate
+    </div>
+    <nav class="site-nav">
+      <a href="#calculator">Calculator</a>
+      <a href="#signs">Signs of dehydration</a>
+      <a href="#conditions">Health conditions</a>
+      <a href="#tips">Hydration tips</a>
+      <a href="#whisker-check">Bowl check</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Is your cat actually drinking enough?</h1>
+      <p class="lede">Most cats run a little dehydrated without ever showing it. Tell us your cat's weight, diet, and age, and we'll give you a real daily water target — in ounces or millilitres.</p>
+      <div class="cta-row">
+        <a href="#calculator"><button class="btn-primary">Calculate my cat's water target</button></a>
+      </div>
+      <p class="hint">Takes about 15 seconds. No email required.</p>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="150" cy="235" rx="110" ry="14" fill="#E9D7B6" opacity="0.6"/>
+
+        <!-- tail -->
+        <path d="M198 165c22 6 34 24 28 40-4 11-14 15-14 15" stroke="#E8A868" stroke-width="16" stroke-linecap="round" fill="none"/>
+        <path d="M198 165c22 6 34 24 28 40-4 11-14 15-14 15" stroke="#F3C892" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+        <!-- body -->
+        <path d="M95 132c-30-8-42 20-42 20s6 32 40 44c22 8 46 8 68 0 34-12 40-44 40-44s-12-28-42-20c-6-16-20-26-32-26s-26 10-32 26Z" fill="#EFA85E"/>
+
+        <!-- tabby stripes on head -->
+        <path d="M92 118c3 6 6 10 6 10M104 112c2 7 4 12 4 12M148 112c-2 7-4 12-4 12M160 118c-3 6-6 10-6 10" stroke="#D9863E" stroke-width="4" stroke-linecap="round"/>
+
+        <!-- ears -->
+        <path d="M78 132c-6-14-2-30-2-30s16 4 22 18" stroke="#EFA85E" stroke-width="10" stroke-linecap="round" fill="none"/>
+        <path d="M154 120c6-14 2-30 2-30s-16 4-22 18" stroke="#EFA85E" stroke-width="10" stroke-linecap="round" fill="none"/>
+        <path d="M82 122c-3-7-1-15-1-15s8 2 11 9" stroke="#F6C99A" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M148 114c3-7 1-15 1-15s-8 2-11 9" stroke="#F6C99A" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+        <!-- cheeks -->
+        <ellipse cx="106" cy="158" rx="9" ry="6" fill="#F7BF95" opacity="0.7"/>
+        <ellipse cx="142" cy="158" rx="9" ry="6" fill="#F7BF95" opacity="0.7"/>
+
+        <!-- big friendly eyes -->
+        <ellipse cx="112" cy="148" rx="6.5" ry="8" fill="#1F2E2B"/>
+        <ellipse cx="136" cy="148" rx="6.5" ry="8" fill="#1F2E2B"/>
+        <circle cx="114.5" cy="145" r="2" fill="#FAF7F1"/>
+        <circle cx="138.5" cy="145" r="2" fill="#FAF7F1"/>
+        <path d="M100 138c3-3 7-4 10-3M137 135c3-1 7 0 10 3" stroke="#1F2E2B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+        <!-- nose and mouth -->
+        <path d="M121 158l3 3 3-3Z" fill="#DD7C58"/>
+        <path d="M124 161v3M124 164c-4 4-9 4-9 4M124 164c4 4 9 4 9 4" stroke="#1F2E2B" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+        <!-- whiskers -->
+        <path d="M70 152h20M69 160h21M158 152h20M158 160h21" stroke="#1F2E2B" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- paws on bowl rim -->
+        <ellipse cx="122" cy="196" rx="9" ry="7" fill="#EFA85E"/>
+        <ellipse cx="146" cy="196" rx="9" ry="7" fill="#EFA85E"/>
+
+        <!-- water bowl -->
+        <ellipse cx="150" cy="225" rx="72" ry="20" fill="#2F7A78"/>
+        <ellipse cx="150" cy="220" rx="60" ry="13" fill="#8FCFCB"/>
+        <path d="M110 219c6-4 13-6 20-2s12 6 20 2 14-6 20-2" stroke="#FAF7F1" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="calc-section" id="calculator">
+  <div class="wrap">
+    <div class="calc-card">
+      <div>
+        <h2>About your cat</h2>
+        <p class="section-note">A little detail goes a long way — diet in particular changes the number a lot.</p>
+
+        <div class="field">
+          <label for="weight-input">Weight</label>
+          <div class="weight-row">
+            <input type="number" id="weight-input" min="0.5" step="0.1" placeholder="e.g. 9.5" inputmode="decimal">
+            <div class="unit-toggle" role="group" aria-label="Weight unit">
+              <button type="button" id="unit-lb" class="active" aria-pressed="true">lb</button>
+              <button type="button" id="unit-kg" aria-pressed="false">kg</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Age</label>
+          <div class="choice-group" id="age-group">
+            <label class="choice" data-value="kitten">
+              <input type="radio" name="age" value="kitten">
+              <span class="choice-text"><strong>Kitten</strong><span>Under 1 year — higher water turnover</span></span>
+            </label>
+            <label class="choice selected" data-value="adult">
+              <input type="radio" name="age" value="adult" checked>
+              <span class="choice-text"><strong>Adult</strong><span>1–10 years</span></span>
+            </label>
+            <label class="choice" data-value="senior">
+              <input type="radio" name="age" value="senior">
+              <span class="choice-text"><strong>Senior</strong><span>10+ years — worth watching closely</span></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Diet</h2>
+        <p class="section-note">This is the biggest factor, since wet food already carries most of a cat's water.</p>
+
+        <div class="choice-group" id="diet-group">
+          <label class="choice" data-value="dry">
+            <input type="radio" name="diet" value="dry">
+            <span class="choice-text"><strong>Dry food only</strong><span>~10% moisture — nearly all water must come from drinking</span></span>
+          </label>
+          <label class="choice selected" data-value="mixed">
+            <input type="radio" name="diet" value="mixed" checked>
+            <span class="choice-text"><strong>Mixed dry &amp; wet</strong><span>A common everyday combination</span></span>
+          </label>
+          <label class="choice" data-value="wet">
+            <input type="radio" name="diet" value="wet">
+            <span class="choice-text"><strong>Wet food only</strong><span>~75–80% moisture — much of the target is met through food</span></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="calc-actions">
+        <button class="btn-primary" id="calc-btn">Calculate my cat's water target</button>
+        <span class="hint" id="calc-error" style="color:#B4472F; display:none;">Enter your cat's weight first.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="result-section" id="result-section">
+  <div class="wrap">
+    <div class="result-card">
+      <div>
+        <div class="result-label">Daily water target</div>
+        <div class="result-number"><span id="result-oz">—</span><small>fl oz / day</small></div>
+        <div class="result-number" style="margin-top:6px;"><span id="result-ml">—</span><small>mL / day</small></div>
+
+        <div class="result-breakdown">
+          <div class="row"><span>Should come from the water bowl</span><strong id="result-drink">—</strong></div>
+          <div class="row"><span>Already covered by food moisture</span><strong id="result-food">—</strong></div>
+        </div>
+
+        <div class="dual-result">
+          <div class="dual-label">Two ways to hit that bowl target</div>
+          <div class="dual-tiles">
+            <div class="dual-tile">
+              <div class="tile-label">Drink from the bowl</div>
+              <div class="tile-value"><span id="dual-bowl-oz">—</span><small>fl oz</small></div>
+              <div class="tile-sub"><span id="dual-bowl-ml">—</span> mL of plain water</div>
+            </div>
+            <div class="dual-or">or</div>
+            <div class="dual-tile">
+              <div class="tile-label">Get it from wet food instead</div>
+              <div class="tile-value"><span id="dual-food-oz">—</span><small>oz</small></div>
+              <div class="tile-sub" id="dual-food-cans">—</div>
+            </div>
+          </div>
+          <p class="dual-note" id="dual-context-note">Based on typical canned/wet food at ~78% moisture. This is on top of your cat's normal feeding — it's not a full diet replacement, and mixing extra wet food in should be balanced against daily calorie needs.</p>
+        </div>
+      </div>
+      <div class="bowl-wrap">
+        <svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="bowlClip">
+              <path d="M30 70 Q100 100 170 70 L162 130 Q100 150 38 130 Z"/>
+            </clipPath>
+          </defs>
+          <path d="M30 70 Q100 100 170 70 L162 130 Q100 150 38 130 Z" fill="none" stroke="#8FCFCB" stroke-width="3"/>
+          <rect id="bowl-fill" x="30" width="140" y="130" height="0" fill="#8FCFCB" clip-path="url(#bowlClip)"/>
+          <ellipse cx="100" cy="70" rx="70" ry="14" fill="none" stroke="#D9EFEC" stroke-width="2.5"/>
+        </svg>
+      </div>
+      <p class="result-note">This is a general estimate based on common veterinary hydration guidelines, not a diagnosis. Cats with kidney disease, diabetes, or other conditions can have very different needs — check with your vet if you're concerned, especially for sudden changes in thirst or urination.</p>
+
+      <div class="result-share">
+        <div class="share-label">Save or share this result</div>
+        <div class="share-link-row">
+          <input type="text" id="share-link-input" readonly aria-label="Shareable link to this result" value="">
+          <button class="btn-secondary" id="copy-link-btn" type="button">Copy link</button>
+        </div>
+        <div class="share-actions-row">
+          <button class="btn-secondary" id="copy-summary-btn" type="button">Copy summary text</button>
+          <button class="btn-secondary" id="print-summary-btn" type="button">Print / Save as PDF</button>
+          <span class="share-msg" id="share-msg"></span>
+        </div>
+      </div>
+
+      <div class="result-reset-row">
+        <button class="btn-secondary" id="reset-btn" type="button">↺ Start over</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signs-section" id="signs">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Signs your cat may be dehydrated</h2>
+      <p>A cat that's quietly under-drinking rarely makes it obvious. These are the physical signs worth checking for, especially if your cat eats mostly dry food.</p>
+    </div>
+
+    <div class="signs-grid">
+      <div class="sign-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21c-4-3.5-7-7-7-11a7 7 0 0 1 14 0c0 4-3 7.5-7 11Z" stroke="#1B4F4D" stroke-width="1.6"/><path d="M9 11h6M9 14h4" stroke="#1B4F4D" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <strong>Loss of skin elasticity</strong>
+        <span>Gently lift the skin between the shoulder blades. In a well-hydrated cat it snaps back quickly — in a dehydrated one, it settles back slowly or stays "tented."</span>
+      </div>
+
+      <div class="sign-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12c2-5 6-8 8-8s6 3 8 8c-2 5-6 8-8 8s-6-3-8-8Z" stroke="#1B4F4D" stroke-width="1.6"/><circle cx="12" cy="12" r="1.6" fill="#1B4F4D"/></svg>
+        </div>
+        <strong>Dry or tacky gums</strong>
+        <span>Healthy gums feel wet and slick to the touch. Dry, tacky, or unusually pale gums are one of the more reliable early signs of fluid loss.</span>
+      </div>
+
+      <div class="sign-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 17c3-6 6-8 8-8s5 2 8 8" stroke="#1B4F4D" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="9" r="3" stroke="#1B4F4D" stroke-width="1.6"/></svg>
+        </div>
+        <strong>Sunken eyes</strong>
+        <span>The eyes can look noticeably sunken or lose their usual fullness. This is more common in moderate-to-severe dehydration than in mild cases.</span>
+      </div>
+
+      <div class="sign-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#1B4F4D" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="#1B4F4D" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <strong>Lethargy or low energy</strong>
+        <span>A dehydrated cat often sleeps more than usual, seems unusually withdrawn, or is reluctant to jump, play, or move around.</span>
+      </div>
+
+      <div class="sign-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v4M12 17v4M4.2 12H3M21 12h-1.2M6 6l2 2M18 6l-2 2M6 18l2-2M18 18l-2-2" stroke="#1B4F4D" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="#1B4F4D" stroke-width="1.6"/></svg>
+        </div>
+        <strong>Reduced appetite</strong>
+        <span>Dehydration and reduced eating often show up together — a cat that skips meals for more than a day is worth watching closely for other signs too.</span>
+      </div>
+
+      <div class="sign-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11Z" stroke="#1B4F4D" stroke-width="1.6"/><path d="M9 15c1 1.5 5 1.5 6 0" stroke="#1B4F4D" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <strong>Thick or stringy saliva</strong>
+        <span>Saliva that looks unusually thick, stringy, or foamy can accompany more advanced dehydration, often alongside panting or excessive grooming around the mouth.</span>
+      </div>
+    </div>
+
+    <div class="vet-warning">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 2 20h20L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+      </div>
+      <div>
+        <strong>Call your vet immediately for severe symptoms</strong>
+        <span>Repeated vomiting or diarrhea, collapse, extreme lethargy, a skin tent that doesn't spring back at all, or refusal to eat or drink for over 24 hours can point to serious or rapidly worsening dehydration. Don't wait to see if it improves on its own — contact your veterinarian or an emergency animal hospital right away.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="conditions-section" id="conditions">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>When water changes point to something more than thirst</h2>
+      <p>This calculator gives a general target — it can't tell the difference between a hot day and a disease process. Several common feline conditions change how much a cat drinks, sometimes dramatically, and catching that shift early matters.</p>
+    </div>
+
+    <div class="condition-grid">
+      <div class="condition-card">
+        <div class="cond-head">
+          <div>
+            <h3>Chronic Kidney Disease</h3>
+            <div class="cond-abbr">CKD</div>
+          </div>
+          <div class="cond-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 4c-3 0-4 3-4 6 0 5 3 10 4 10s1-3 1-6-1-4-1-6 3-2 3-4-1-2-3-2Z" stroke="#1B4F4D" stroke-width="1.4"/><path d="M16 4c3 0 4 3 4 6 0 5-3 10-4 10s-1-3-1-6 1-4 1-6-3-2-3-4 1-2 3-2Z" stroke="#1B4F4D" stroke-width="1.4"/></svg>
+          </div>
+        </div>
+        <span class="water-tag">↑ Usually increases thirst</span>
+        <p>As kidney function declines, the kidneys lose their ability to concentrate urine, so the body loses more water than normal and compensates by drinking more. It's most common in cats over 10, and increased thirst is often one of the earliest visible signs — sometimes appearing before a cat seems sick in any other way.</p>
+        <div class="cond-watch">Watch for:</div>
+        <ul>
+          <li>Noticeably increased drinking and urination</li>
+          <li>Weight loss despite normal or increased appetite</li>
+          <li>Larger, more frequent clumps in the litter box</li>
+        </ul>
+      </div>
+
+      <div class="condition-card">
+        <div class="cond-head">
+          <div>
+            <h3>Feline Lower Urinary Tract Disease</h3>
+            <div class="cond-abbr">FLUTD</div>
+          </div>
+          <div class="cond-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="8" rx="7" ry="4" stroke="#1B4F4D" stroke-width="1.4"/><path d="M6 8c0 4 2 10 6 12 4-2 6-8 6-12" stroke="#1B4F4D" stroke-width="1.4"/></svg>
+          </div>
+        </div>
+        <span class="water-tag">⚠ Often reduces drinking</span>
+        <p>FLUTD is an umbrella term for bladder inflammation, crystals, or stones in the urinary tract. Cats often drink less because urinating has become painful, which sets up a dangerous cycle — less water intake means more concentrated urine, which worsens irritation and crystal formation.</p>
+        <div class="cond-watch">Watch for:</div>
+        <ul>
+          <li>Straining, crying, or frequent trips to the litter box with little urine produced</li>
+          <li>Blood-tinged urine or urinating outside the litter box</li>
+          <li>In male cats especially: a fully blocked urethra is a medical emergency</li>
+        </ul>
+      </div>
+
+      <div class="condition-card">
+        <div class="cond-head">
+          <div>
+            <h3>Diabetes Mellitus</h3>
+            <div class="cond-abbr">Diabetes</div>
+          </div>
+          <div class="cond-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11Z" stroke="#1B4F4D" stroke-width="1.4"/><path d="M9 15h6" stroke="#1B4F4D" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <span class="water-tag">↑ Usually increases thirst</span>
+        <p>When blood sugar runs too high, excess glucose spills into the urine and pulls water along with it. That extra fluid loss triggers a big compensatory increase in thirst — often one of the first things an owner notices, sometimes alongside a bigger appetite paired with unexplained weight loss.</p>
+        <div class="cond-watch">Watch for:</div>
+        <ul>
+          <li>Marked increase in drinking and urination</li>
+          <li>Increased appetite with weight loss</li>
+          <li>Unusual weakness or a wobbly, flat-footed walk</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="conditions-callout">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 2 20h20L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+      </div>
+      <div>
+        <strong>Why a sudden change in drinking needs a vet, not just a watchful eye</strong>
+        <p>A hydration calculator — or any home checklist — can't distinguish a hot afternoon or a diet change from CKD, diabetes, hyperthyroidism, liver disease, or a urinary blockage. Several of these look almost identical from the outside: more thirst, more urination, maybe some weight change. The only way to tell them apart is bloodwork and a urinalysis, which is exactly what a vet visit is for.</p>
+        <p>This matters because early detection changes outcomes. CKD and diabetes are both far easier to manage — and slow down — when caught early, before there's lasting organ damage. If your cat's drinking noticeably more or less than usual for more than a day or two, or you've noticed any of the warning signs above, that's a reason to call your vet, not to wait and monitor further.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tips-section" id="tips">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Practical ways to get your cat drinking more</h2>
+      <p>Cats are picky about water for real, physical reasons. Small changes to placement, bowl choice, and freshness usually work better than nagging your cat to drink.</p>
+    </div>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4l16 16M4 20L20 4" stroke="#1B4F4D" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="#1B4F4D" stroke-width="1.4" opacity="0.35"/></svg>
+        </div>
+        <strong>Keep water away from litter boxes and food</strong>
+        <span>In the wild, cats instinctively avoid drinking near where they eliminate or eat, since it signals contaminated water. Placing bowls in a separate, quiet spot can make a real difference.</span>
+      </div>
+
+      <div class="tip-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="8" rx="8" ry="3" stroke="#1B4F4D" stroke-width="1.6"/><path d="M4 8v6c0 1.7 3.6 3 8 3s8-1.3 8-3V8" stroke="#1B4F4D" stroke-width="1.6"/></svg>
+        </div>
+        <strong>Choose wide, shallow bowls</strong>
+        <span>Deep, narrow bowls press against a cat's sensitive whiskers with every sip — known as "whisker fatigue." Wide ceramic or stainless steel bowls let them drink without that pressure.</span>
+      </div>
+
+      <div class="tip-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="7" width="4" height="4" rx="0.5" stroke="#1B4F4D" stroke-width="1.4"/><rect x="13" y="7" width="4" height="4" rx="0.5" stroke="#1B4F4D" stroke-width="1.4"/><rect x="7" y="13" width="4" height="4" rx="0.5" stroke="#1B4F4D" stroke-width="1.4"/><rect x="13" y="13" width="4" height="4" rx="0.5" stroke="#1B4F4D" stroke-width="1.4"/></svg>
+        </div>
+        <strong>Offer plain, low-sodium broth ice cubes</strong>
+        <span>Freeze a small amount of plain, low-sodium chicken or fish broth (no onion, garlic, or seasoning) into cubes. The scent and flavor can tempt cats who ignore a plain water bowl.</span>
+      </div>
+
+      <div class="tip-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11Z" stroke="#1B4F4D" stroke-width="1.6"/><path d="M4 14c2-1 4-1 6 0M14 14c2-1 4-1 6 0" stroke="#1B4F4D" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <strong>Set up more than one water station</strong>
+        <span>Cats in multi-level or multi-room homes often drink more when water is available in two or three spots, rather than a single bowl they have to seek out.</span>
+      </div>
+
+      <div class="tip-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4v4M8 5l2 3M16 5l-2 3" stroke="#1B4F4D" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="12" cy="15" rx="8" ry="5" stroke="#1B4F4D" stroke-width="1.6"/></svg>
+        </div>
+        <strong>Wash and refill bowls daily</strong>
+        <span>A film builds up on standing water within a day, changing its taste and smell in ways cats notice immediately. Fresh water in a clean bowl gets used far more reliably.</span>
+      </div>
+
+      <div class="tip-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#1B4F4D" stroke-width="1.6"/><path d="M8 12a4 4 0 0 1 8 0c0 2-2 2-2 4" stroke="#1B4F4D" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="17.5" r="0.8" fill="#1B4F4D"/></svg>
+        </div>
+        <strong>Add moisture through food</strong>
+        <span>Mixing in wet food, or adding a splash of water or low-sodium broth to dry kibble, is one of the most effective ways to raise total water intake without changing drinking habits at all.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="whisker-section" id="whisker-check">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Check your bowl for whisker fatigue</h2>
+      <p>Whisker fatigue is stress caused by a cat's sensitive whiskers repeatedly brushing the sides of a too-narrow bowl. It's a common, physical reason cats avoid drinking even when water is right there. Answer a few quick questions about your current setup.</p>
+    </div>
+
+    <div class="whisker-card">
+      <div class="field">
+        <label>What's the bowl made of?</label>
+        <div class="choice-group" id="whisker-material">
+          <label class="choice selected" data-value="plastic">
+            <input type="radio" name="whisker-material" value="plastic" checked>
+            <span class="choice-text"><strong>Plastic</strong></span>
+          </label>
+          <label class="choice" data-value="ceramic-steel">
+            <input type="radio" name="whisker-material" value="ceramic-steel">
+            <span class="choice-text"><strong>Ceramic or stainless steel</strong></span>
+          </label>
+          <label class="choice" data-value="not-sure">
+            <input type="radio" name="whisker-material" value="not-sure">
+            <span class="choice-text"><strong>Not sure</strong></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>What shape is it?</label>
+        <div class="choice-group" id="whisker-shape">
+          <label class="choice selected" data-value="narrow-deep">
+            <input type="radio" name="whisker-shape" value="narrow-deep" checked>
+            <span class="choice-text"><strong>Narrow &amp; deep</strong></span>
+          </label>
+          <label class="choice" data-value="wide-shallow">
+            <input type="radio" name="whisker-shape" value="wide-shallow">
+            <span class="choice-text"><strong>Wide &amp; shallow</strong></span>
+          </label>
+          <label class="choice" data-value="not-sure">
+            <input type="radio" name="whisker-shape" value="not-sure">
+            <span class="choice-text"><strong>Not sure</strong></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Do your cat's whiskers touch the sides while drinking?</label>
+        <div class="choice-group" id="whisker-touch">
+          <label class="choice selected" data-value="yes">
+            <input type="radio" name="whisker-touch" value="yes" checked>
+            <span class="choice-text"><strong>Yes</strong></span>
+          </label>
+          <label class="choice" data-value="no">
+            <input type="radio" name="whisker-touch" value="no">
+            <span class="choice-text"><strong>No</strong></span>
+          </label>
+          <label class="choice" data-value="not-sure">
+            <input type="radio" name="whisker-touch" value="not-sure">
+            <span class="choice-text"><strong>Haven't noticed</strong></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Where is the bowl placed?</label>
+        <div class="choice-group" id="whisker-placement">
+          <label class="choice selected" data-value="near-food-litter">
+            <input type="radio" name="whisker-placement" value="near-food-litter" checked>
+            <span class="choice-text"><strong>Right next to food or litter box</strong></span>
+          </label>
+          <label class="choice" data-value="separate">
+            <input type="radio" name="whisker-placement" value="separate">
+            <span class="choice-text"><strong>Separate, quiet spot</strong></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="whisker-actions">
+        <button class="btn-primary" id="whisker-btn" type="button">Check my bowl setup</button>
+      </div>
+
+      <div class="whisker-result" id="whisker-result">
+        <div class="whisker-verdict" id="whisker-verdict">
+          <div class="icon" id="whisker-verdict-icon"></div>
+          <div>
+            <strong id="whisker-verdict-title">—</strong>
+            <span id="whisker-verdict-text">—</span>
+          </div>
+        </div>
+        <div class="whisker-tips" id="whisker-tips"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tracker-section" id="tracker">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Hydration &amp; litter habit tracker</h2>
+      <p>Log a quick daily note on drinking, urination, and bowel movements. Sudden shifts are far easier to catch when you can see the pattern, and having a printed log ready makes vet visits faster.</p>
+    </div>
+
+    <div class="tracker-card">
+      <form id="tracker-form">
+        <div class="tracker-form">
+          <div class="field">
+            <label for="tracker-date">Date</label>
+            <input type="date" id="tracker-date" required>
+          </div>
+          <div class="field">
+            <label for="tracker-thirst">Thirst / drinking today</label>
+            <select id="tracker-thirst">
+              <option value="2">Much more than usual</option>
+              <option value="1">Slightly more than usual</option>
+              <option value="0" selected>About normal</option>
+              <option value="-1">Slightly less than usual</option>
+              <option value="-2">Much less than usual</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tracker-amount">Approx. water consumed (fl oz, optional)</label>
+            <input type="number" id="tracker-amount" min="0" step="0.1" placeholder="e.g. 4">
+          </div>
+          <div class="field">
+            <label for="tracker-urination">Urination</label>
+            <select id="tracker-urination">
+              <option value="normal" selected>Normal</option>
+              <option value="more">More frequent</option>
+              <option value="less">Less frequent</option>
+              <option value="straining">Straining / difficulty</option>
+              <option value="blood">Blood noticed</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tracker-bowel">Bowel movement</label>
+            <select id="tracker-bowel">
+              <option value="normal" selected>Normal</option>
+              <option value="soft">Soft / loose</option>
+              <option value="diarrhea">Diarrhea</option>
+              <option value="constipation">Constipation</option>
+              <option value="none">Didn't observe one</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="tracker-notes">Notes (optional)</label>
+            <textarea id="tracker-notes" placeholder="Anything else worth remembering — appetite, energy, litter box changes..."></textarea>
+          </div>
+          <div class="tracker-actions-row">
+            <button type="submit" class="btn-primary">Add today's entry</button>
+            <span class="hint-sm" id="tracker-form-msg"></span>
+          </div>
+        </div>
+      </form>
+
+      <div class="tracker-alert" id="tracker-alert" style="display:none;">
+        <div class="icon" id="tracker-alert-icon"></div>
+        <div>
+          <strong id="tracker-alert-title">—</strong>
+          <span id="tracker-alert-text">—</span>
+        </div>
+      </div>
+
+      <div class="tracker-chart-wrap">
+        <h3>Thirst trend</h3>
+        <p class="hint-sm">Plotted from "much less" (bottom) to "much more" (top) across your logged entries, oldest to newest.</p>
+        <svg id="tracker-chart" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+
+      <div class="tracker-log">
+        <div class="tracker-log-head">
+          <h3>Logged entries</h3>
+          <div class="tracker-log-tools">
+            <button type="button" class="btn-outline" id="tracker-print-btn">Print / Save as PDF</button>
+            <button type="button" class="btn-outline" id="tracker-csv-btn">Export CSV</button>
+            <button type="button" class="btn-outline" id="tracker-json-export-btn">Backup (JSON)</button>
+            <button type="button" class="btn-outline" id="tracker-json-import-btn">Restore (JSON)</button>
+            <input type="file" id="tracker-json-import-input" accept="application/json" style="display:none;">
+            <button type="button" class="btn-text-danger" id="tracker-clear-btn">Clear all entries</button>
+          </div>
+        </div>
+        <div id="tracker-entries-wrap">
+          <p class="tracker-empty" id="tracker-empty-msg">No entries yet — add your first one above.</p>
+          <div class="tracker-entries" id="tracker-entries"></div>
+        </div>
+      </div>
+
+      <p class="tracker-storage-note">Entries are saved in this browser only (no account or cloud sync), so they won't carry over to another device or browser on their own. Use "Export CSV" or "Print / Save as PDF" for a vet-friendly copy, or "Backup (JSON)" and "Restore (JSON)" to move your full log to another device or browser.</p>
+    </div>
+  </div>
+</section>
+
+<div id="print-area"></div>
+
+<section class="faq-section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Frequently asked questions</h2>
+      <p>The questions we hear most from cat owners trying to get their cat to drink more.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>
+          Why does my cat prefer running tap water?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>It's largely instinct. In the wild, still water is more likely to be stagnant or contaminated, while moving water — a stream, a puddle being stirred by wind — usually means it's fresher and safer to drink. Cats carry that same instinct around a still bowl versus a running tap or fountain.</p>
+          <p>It's also partly sensory: running water agitates and aerates, which can make it taste and smell different (often preferred) compared to water that's been sitting still, especially if it's picked up any odor from the bowl itself.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Is tap water safe, or should I use filtered water?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>For most cats on a typical municipal water supply, tap water is perfectly safe. The main reason owners switch to filtered water isn't safety — it's palatability. Chlorine and other treatment chemicals can affect taste and smell in ways that put some cats off drinking, and a basic carbon filter (like the ones built into most cat fountains) removes a lot of that.</p>
+          <p>If you're on well water, or you have any specific concern about your local water quality, that's worth checking against your municipal water report or a vet's advice rather than guessing — filtering is about taste for most households, not a substitute for knowing your water source is safe.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          How often should I change the water in a fountain?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>As a general rule: a full water change and basin rinse every 3–4 days, with a proper deep clean (basin, pump, and impeller) every 1–2 weeks to keep biofilm and mineral buildup from forming — that buildup is exactly the kind of thing that makes water taste "off" to a cat and defeats the purpose of the fountain.</p>
+          <p>Filter cartridges are separate from the water itself and typically need replacing every 2–4 weeks depending on the model and how many cats share it — check your specific fountain's manual, since this varies more by brand than the water-change schedule does.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Do ice cubes in the water bowl actually help?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Some cats do find them more interesting — a bobbing ice cube can turn the bowl into something worth investigating, and it works especially well when the cube is made from a bit of low-sodium broth rather than plain water (see the <a href="#tips">hydration tips</a> above). It's not a hydration fix on its own, more a novelty that occasionally nudges a reluctant drinker over.</p>
+          <p>It's not necessary for most cats, and there's no need to force it if yours isn't interested — a wide, clean bowl in the right spot does more heavy lifting than ice ever will.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          I just bought a wider bowl and my cat won't touch it — now what?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Totally normal. Cats can be wary of anything new in their space, bowls included. Try placing the new bowl right next to the old one for a few days rather than swapping it outright, and keep both filled — most cats will start alternating and eventually favor the wider one once it stops feeling unfamiliar.</p>
+          <p>If it's been more than a week or two with zero interest, double-check placement and material against the <a href="#whisker-check">whisker fatigue checklist</a> above — sometimes it's less about "new" and more about something else in the setup still not being quite right.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Does my cat's water intake normally change with the seasons?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, mild seasonal shifts are expected — more drinking in hot weather or after extra activity, less on cooler, low-activity days. That kind of gradual, weather-linked change isn't usually a concern.</p>
+          <p>What's worth paying attention to is a change that's sudden, large, or doesn't track with anything obvious like weather or a new food. That pattern is different from normal seasonal drift, and it's exactly what the <a href="#conditions">health conditions</a> section above and the <a href="#tracker">tracker</a> are meant to help you catch early.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          How much water does my cat need if they eat only kibble vs. wet food?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>The gap is bigger than most owners expect. Dry food is only around 10% moisture, so a cat eating kibble exclusively needs to get nearly all of its water from the bowl — often close to 90% of its total daily need. Wet food, by contrast, is typically 75–80% moisture, so a cat on an all-wet diet may only need to actively drink a small fraction of its total water needs, since most of it is already coming from the food itself.</p>
+          <p>Rather than a single number, the exact target depends on your cat's weight and age too — that's exactly what the <a href="#calculator">calculator</a> above works out for you, including a side-by-side breakdown of how much should come from the bowl versus how much wet food would cover the same amount.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Why isn't my cat drinking water?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Usually it comes down to one of a handful of physical, fixable causes rather than the cat being "stubborn." The most common: a bowl that's too narrow or deep (see the <a href="#whisker-check">whisker fatigue check</a> above), water placed too close to food or the litter box, standing water that's gone stale or picked up an odor, or simply a diet that's already wet-food-heavy enough that the cat doesn't feel the need to drink much at the bowl at all.</p>
+          <p>The <a href="#tips">hydration tips</a> section above covers the fixes for most of these. If you've ruled those out and your cat still isn't drinking, or you're also noticing any of the <a href="#signs">signs of dehydration</a>, that's the point to loop in a vet rather than keep troubleshooting at home.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          How do I calculate total fluid intake including canned food?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>The short version: total fluid intake is drinking water plus the water already inside whatever your cat eats. Canned/wet food is typically about 75–80% moisture by weight, so a 3 oz can contributes roughly 2.2–2.4 oz of that as water — dry kibble, by comparison, contributes very little (~10% moisture).</p>
+          <p>You don't need to do this math by hand — enter your cat's weight, age, and diet into the <a href="#calculator">calculator</a> above, and it splits the total daily target into exactly this: how much is already covered by food moisture, and how much still needs to come from the bowl. The dual-result panel below your result even converts that bowl amount into an equivalent wet-food portion, if you'd rather think in cans than ounces.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="logo" style="font-size:1.05rem;">
+      <svg viewBox="0 0 40 40" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4C11 4 5 12 5 20c0 8.5 6.5 16 15 16s15-7.5 15-16C35 12 29 4 20 4Z" fill="#2F7A78"/>
+      </svg>
+      PurrHydrate
+    </div>
+    <p>PurrHydrate provides general wellness information for cat owners and is not a substitute for veterinary care. If your cat's water intake or urination changes suddenly, please contact your vet.</p>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <nav class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="contact.html">Contact &amp; Feedback</a>
+      </nav>
+      <span class="footer-copyright">© 2026 PurrHydrate. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let unit = 'lb';
+  let lastResult = null; // populated by runCalculation(), used by the share/summary/print features
+  const weightInput = document.getElementById('weight-input');
+  const unitLb = document.getElementById('unit-lb');
+  const unitKg = document.getElementById('unit-kg');
+
+  unitLb.addEventListener('click', () => {
+    if (unit === 'kg' && weightInput.value) {
+      weightInput.value = (parseFloat(weightInput.value) * 2.20462).toFixed(1);
+    }
+    unit = 'lb';
+    unitLb.classList.add('active'); unitLb.setAttribute('aria-pressed', 'true');
+    unitKg.classList.remove('active'); unitKg.setAttribute('aria-pressed', 'false');
+  });
+  unitKg.addEventListener('click', () => {
+    if (unit === 'lb' && weightInput.value) {
+      weightInput.value = (parseFloat(weightInput.value) / 2.20462).toFixed(1);
+    }
+    unit = 'kg';
+    unitKg.classList.add('active'); unitKg.setAttribute('aria-pressed', 'true');
+    unitLb.classList.remove('active'); unitLb.setAttribute('aria-pressed', 'false');
+  });
+
+  function wireChoiceGroup(groupId) {
+    const group = document.getElementById(groupId);
+    group.querySelectorAll('.choice').forEach(choice => {
+      choice.addEventListener('click', () => {
+        group.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
+        choice.classList.add('selected');
+        choice.querySelector('input').checked = true;
+      });
+    });
+  }
+  wireChoiceGroup('age-group');
+  wireChoiceGroup('diet-group');
+  wireChoiceGroup('whisker-material');
+  wireChoiceGroup('whisker-shape');
+  wireChoiceGroup('whisker-touch');
+  wireChoiceGroup('whisker-placement');
+
+  const errorEl = document.getElementById('calc-error');
+
+  function runCalculation() {
+    const value = weightInput.value.trim();
+
+    if (value === '') {
+      errorEl.textContent = "Enter your cat's weight first.";
+      errorEl.style.display = 'inline';
+      weightInput.focus();
+      return;
+    }
+
+    const raw = parseFloat(value);
+
+    if (isNaN(raw)) {
+      errorEl.textContent = 'That doesn\'t look like a valid number.';
+      errorEl.style.display = 'inline';
+      weightInput.focus();
+      return;
+    }
+
+    if (raw <= 0) {
+      errorEl.textContent = 'Weight must be greater than zero.';
+      errorEl.style.display = 'inline';
+      weightInput.focus();
+      return;
+    }
+
+    errorEl.style.display = 'none';
+
+    const weightKg = unit === 'lb' ? raw / 2.20462 : raw;
+    const age = document.querySelector('input[name="age"]:checked').value;
+    const diet = document.querySelector('input[name="diet"]:checked').value;
+
+    // Baseline maintenance water need, mL per kg per day (standard small-animal guideline range 50-60 mL/kg/day)
+    let mlPerKg = 60;
+    if (age === 'kitten' || age === 'senior') mlPerKg *= 1.1;
+
+    const totalMl = weightKg * mlPerKg;
+
+    // Share of total water that must come from drinking, vs. is already supplied by food moisture
+    const dietFactor = { dry: 0.9, mixed: 0.6, wet: 0.3 }[diet];
+    const drinkMl = totalMl * dietFactor;
+    const foodMl = totalMl - drinkMl;
+
+    const mlToOz = ml => ml / 29.5735;
+
+    document.getElementById('result-oz').textContent = mlToOz(totalMl).toFixed(1);
+    document.getElementById('result-ml').textContent = Math.round(totalMl);
+    document.getElementById('result-drink').textContent = `${mlToOz(drinkMl).toFixed(1)} oz (${Math.round(drinkMl)} mL)`;
+    document.getElementById('result-food').textContent = `${mlToOz(foodMl).toFixed(1)} oz (${Math.round(foodMl)} mL)`;
+
+    // Dual-result mode: express the bowl target as an equivalent wet-food portion.
+    // Typical canned/wet cat food is ~78% moisture by weight, and roughly 1g ≈ 1mL for this purpose.
+    const WET_FOOD_MOISTURE = 0.78;
+    const GRAMS_PER_STANDARD_CAN = 85; // a common "3 oz" wet food can size
+
+    const wetFoodGrams = drinkMl / WET_FOOD_MOISTURE;
+    const wetFoodOz = wetFoodGrams / 28.3495; // weight ounces, not fluid ounces
+    const standardCans = wetFoodGrams / GRAMS_PER_STANDARD_CAN;
+
+    document.getElementById('dual-bowl-oz').textContent = mlToOz(drinkMl).toFixed(1);
+    document.getElementById('dual-bowl-ml').textContent = Math.round(drinkMl);
+    document.getElementById('dual-food-oz').textContent = wetFoodOz.toFixed(1);
+
+    // Phrase the can count in whichever form actually reads naturally
+    let canText;
+    if (standardCans < 0.15) {
+      canText = 'just a spoonful — a small fraction of a 3 oz can';
+    } else if (standardCans < 0.9) {
+      canText = `≈ ${Math.round(standardCans * 100)}% of a 3 oz can`;
+    } else if (standardCans < 1.15) {
+      canText = '≈ one 3 oz can';
+    } else {
+      canText = `≈ ${standardCans.toFixed(1)} standard 3 oz cans`;
+    }
+    document.getElementById('dual-food-cans').textContent = canText;
+
+    // If the bowl target is tiny relative to the cat's total water need, say so —
+    // otherwise a number like "0.8 oz" can look like a bug rather than a diet effect.
+    const dietDominatesIntake = diet !== 'dry' && drinkMl < totalMl * 0.35;
+    const contextNote = document.getElementById('dual-context-note');
+    contextNote.textContent = dietDominatesIntake
+      ? "Because wet food already supplies most of this cat's water, the bowl target is naturally small — that's expected, not a calculation error. The figures above are based on typical canned/wet food at ~78% moisture and don't replace a full diet plan."
+      : 'Based on typical canned/wet food at ~78% moisture. This is on top of your cat\'s normal feeding — it\'s not a full diet replacement, and mixing extra wet food in should be balanced against daily calorie needs.';
+
+    // Fill bowl visual: scale against a typical 30-350 mL drinking range
+    const pct = Math.max(0.08, Math.min(1, (drinkMl - 20) / (350 - 20)));
+    const fillHeight = 60 * pct;
+    const bowlFill = document.getElementById('bowl-fill');
+    const resultSection = document.getElementById('result-section');
+    const wasHidden = !resultSection.classList.contains('visible');
+
+    if (wasHidden) {
+      // Section is currently display:none, so a transition can't play yet.
+      // Reset the fill to empty now, reveal the section, then set the real
+      // target on the next frame so the CSS transition has something to animate.
+      bowlFill.setAttribute('y', 130);
+      bowlFill.setAttribute('height', 0);
+      resultSection.classList.add('visible');
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          bowlFill.setAttribute('y', 130 - fillHeight);
+          bowlFill.setAttribute('height', fillHeight);
+        });
+      });
+    } else {
+      // Already visible (e.g. recalculating) — just update, transition handles the rest.
+      bowlFill.setAttribute('y', 130 - fillHeight);
+      bowlFill.setAttribute('height', fillHeight);
+    }
+
+    resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    lastResult = {
+      weightRaw: raw,
+      unit,
+      age,
+      diet,
+      totalOz: mlToOz(totalMl),
+      totalMl,
+      drinkOz: mlToOz(drinkMl),
+      drinkMl,
+      foodOz: mlToOz(foodMl),
+      foodMl,
+      wetFoodOz,
+      canText
+    };
+    updateShareLink();
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', runCalculation);
+
+  // Let users press Enter inside the weight field instead of clicking the button
+  weightInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      runCalculation();
+    }
+  });
+
+  // ---------- Share / Save Result ----------
+  const AGE_LABELS = {
+    kitten: 'Kitten (under 1 year)',
+    adult: 'Adult (1–10 years)',
+    senior: 'Senior (10+ years)'
+  };
+  const DIET_LABELS = {
+    dry: 'Dry food only',
+    mixed: 'Mixed dry & wet food',
+    wet: 'Wet food only'
+  };
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).then(() => true).catch(() => fallbackCopy(text));
+    }
+    return Promise.resolve(fallbackCopy(text));
+  }
+
+  function fallbackCopy(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+    document.body.removeChild(textarea);
+    return ok;
+  }
+
+  function showShareMsg(text) {
+    const el = document.getElementById('share-msg');
+    el.textContent = text;
+    setTimeout(() => { if (el.textContent === text) el.textContent = ''; }, 3000);
+  }
+
+  function buildShareURL() {
+    if (!lastResult) return '';
+    const params = new URLSearchParams({
+      w: lastResult.weightRaw,
+      u: lastResult.unit,
+      age: lastResult.age,
+      diet: lastResult.diet
+    });
+    return `${location.origin}${location.pathname}?${params.toString()}#calculator`;
+  }
+
+  function updateShareLink() {
+    document.getElementById('share-link-input').value = buildShareURL();
+  }
+
+  function buildSummaryText() {
+    if (!lastResult) return '';
+    const r = lastResult;
+    return [
+      'PurrHydrate — Cat Hydration Summary',
+      '',
+      `Weight: ${r.weightRaw} ${r.unit}`,
+      `Age: ${AGE_LABELS[r.age]}`,
+      `Diet: ${DIET_LABELS[r.diet]}`,
+      '',
+      `Daily water target: ${r.totalOz.toFixed(1)} fl oz (${Math.round(r.totalMl)} mL)`,
+      `  · From the water bowl: ${r.drinkOz.toFixed(1)} fl oz (${Math.round(r.drinkMl)} mL)`,
+      `  · Already covered by food moisture: ${r.foodOz.toFixed(1)} fl oz (${Math.round(r.foodMl)} mL)`,
+      `  · Wet food equivalent for the bowl portion: ${r.wetFoodOz.toFixed(1)} oz (${r.canText})`,
+      '',
+      'This is a general estimate based on common veterinary hydration guidelines, not a diagnosis.',
+      `Generated at justpurrhydrate.com — ${buildShareURL()}`
+    ].join('\n');
+  }
+
+  document.getElementById('copy-link-btn').addEventListener('click', () => {
+    const input = document.getElementById('share-link-input');
+    if (!input.value) return;
+    input.select();
+    copyToClipboard(input.value).then(ok => {
+      showShareMsg(ok ? 'Link copied!' : "Couldn't copy — link is selected, try Ctrl/Cmd+C.");
+    });
+  });
+
+  document.getElementById('copy-summary-btn').addEventListener('click', () => {
+    if (!lastResult) return;
+    copyToClipboard(buildSummaryText()).then(ok => {
+      showShareMsg(ok ? 'Summary copied — paste it into an email to your vet.' : "Couldn't copy automatically — try selecting the link above instead.");
+    });
+  });
+
+  // Scopes the print stylesheet to show ONLY #print-area's curated report,
+  // rather than the generic "hide chrome, keep page content" print rules.
+  function printCuratedReport() {
+    document.body.classList.add('print-target-active');
+    const cleanup = () => document.body.classList.remove('print-target-active');
+    window.addEventListener('afterprint', cleanup, { once: true });
+    window.print();
+    // Safety net only — 'afterprint' is reliably supported in modern browsers and
+    // fires whether the user prints, saves as PDF, or cancels. This is a long delay
+    // so it never interrupts someone still interacting with the print dialog.
+    setTimeout(cleanup, 60000);
+  }
+
+  document.getElementById('print-summary-btn').addEventListener('click', () => {
+    if (!lastResult) return;
+    const r = lastResult;
+    document.getElementById('print-area').innerHTML = `
+      <h1>PurrHydrate — Cat Hydration Summary</h1>
+      <div class="print-meta">Generated ${new Date().toLocaleDateString()}</div>
+      <table>
+        <tbody>
+          <tr><th>Weight</th><td>${r.weightRaw} ${r.unit}</td></tr>
+          <tr><th>Age</th><td>${AGE_LABELS[r.age]}</td></tr>
+          <tr><th>Diet</th><td>${DIET_LABELS[r.diet]}</td></tr>
+          <tr><th>Daily water target</th><td>${r.totalOz.toFixed(1)} fl oz (${Math.round(r.totalMl)} mL)</td></tr>
+          <tr><th>From the water bowl</th><td>${r.drinkOz.toFixed(1)} fl oz (${Math.round(r.drinkMl)} mL)</td></tr>
+          <tr><th>Already covered by food moisture</th><td>${r.foodOz.toFixed(1)} fl oz (${Math.round(r.foodMl)} mL)</td></tr>
+          <tr><th>Wet food equivalent (bowl portion)</th><td>${r.wetFoodOz.toFixed(1)} oz — ${r.canText}</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.85rem;color:#4C5A56;margin-top:16px;">This is a general estimate based on common veterinary hydration guidelines, not a diagnosis. Cats with kidney disease, diabetes, or other conditions can have very different needs.</p>
+    `;
+    printCuratedReport();
+  });
+
+  // If the page was opened via a shared link, restore the cat's profile and calculate immediately
+  (function loadFromURLParams() {
+    const params = new URLSearchParams(location.search);
+    if (!params.has('w')) return;
+
+    const w = params.get('w');
+    const u = params.get('u');
+    const age = params.get('age');
+    const diet = params.get('diet');
+
+    if (w) weightInput.value = w;
+    if (u === 'kg' || u === 'lb') {
+      unit = u;
+      unitLb.classList.toggle('active', u === 'lb');
+      unitLb.setAttribute('aria-pressed', String(u === 'lb'));
+      unitKg.classList.toggle('active', u === 'kg');
+      unitKg.setAttribute('aria-pressed', String(u === 'kg'));
+    }
+    if (age && document.querySelector(`#age-group .choice[data-value="${age}"]`)) {
+      document.querySelector(`#age-group .choice[data-value="${age}"]`).click();
+    }
+    if (diet && document.querySelector(`#diet-group .choice[data-value="${diet}"]`)) {
+      document.querySelector(`#diet-group .choice[data-value="${diet}"]`).click();
+    }
+
+    if (w) runCalculation();
+  })();
+
+  // ---------- Whisker Fatigue Assessment ----------
+  function getSelectedValue(name) {
+    const el = document.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.value : null;
+  }
+
+  const WHISKER_TIP_LIBRARY = {
+    material: {
+      icon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11Z" stroke="#1B4F4D" stroke-width="1.5"/></svg>',
+      title: 'Swap plastic for ceramic or steel',
+      text: "Plastic scratches easily, and those tiny grooves trap bacteria and odor that can put a cat off drinking — it also tends to flex slightly against whiskers where rigid ceramic or steel won't."
+    },
+    materialUnsure: {
+      icon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#1B4F4D" stroke-width="1.5"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7" stroke="#1B4F4D" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="17" r="0.8" fill="#1B4F4D"/></svg>',
+      title: 'Check what the bowl is made of',
+      text: "If you're not sure, flip it over — ceramic and stainless steel are heavier and rigid, while plastic is lighter and slightly flexible when you squeeze the rim."
+    },
+    shape: {
+      icon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="8" rx="8" ry="3" stroke="#1B4F4D" stroke-width="1.5"/><path d="M4 8v6c0 1.7 3.6 3 8 3s8-1.3 8-3V8" stroke="#1B4F4D" stroke-width="1.5"/></svg>',
+      title: 'Move to a wide, shallow bowl',
+      text: 'Aim for a bowl at least 3–4 inches across with very low sides, roughly as wide as your cat\'s face. That way their whiskers never have to bend to reach the water.'
+    },
+    shapeUnsure: {
+      icon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#1B4F4D" stroke-width="1.5"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7" stroke="#1B4F4D" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="17" r="0.8" fill="#1B4F4D"/></svg>',
+      title: 'Watch your cat drink for 10 seconds',
+      text: "Whisker fatigue is easy to spot once you know the signs: hesitating before drinking, pawing at the water instead of dipping in, or pulling whiskers back flat against the face."
+    },
+    placement: {
+      icon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21c-4-3.5-7-7-7-11a7 7 0 0 1 14 0c0 4-3 7.5-7 11Z" stroke="#1B4F4D" stroke-width="1.5"/><circle cx="12" cy="10" r="2.4" stroke="#1B4F4D" stroke-width="1.5"/></svg>',
+      title: 'Relocate the water bowl',
+      text: "Move water to a separate, quiet spot away from food and the litter box. Instinctively, cats read water sitting near food or waste as a sign it might be contaminated."
+    }
+  };
+
+  function buildWhiskerTip(key) {
+    const t = WHISKER_TIP_LIBRARY[key];
+    return `<div class="whisker-tip"><div class="icon">${t.icon}</div><div><strong>${t.title}</strong><span>${t.text}</span></div></div>`;
+  }
+
+  document.getElementById('whisker-btn').addEventListener('click', () => {
+    const material = getSelectedValue('whisker-material');
+    const shape = getSelectedValue('whisker-shape');
+    const touch = getSelectedValue('whisker-touch');
+    const placement = getSelectedValue('whisker-placement');
+
+    const definiteRisks = [];
+    if (material === 'plastic') definiteRisks.push('material');
+    if (shape === 'narrow-deep' || touch === 'yes') definiteRisks.push('shape');
+    if (placement === 'near-food-litter') definiteRisks.push('placement');
+
+    const uncertainKeys = [];
+    if (material === 'not-sure' && !definiteRisks.includes('material')) uncertainKeys.push('materialUnsure');
+    if ((shape === 'not-sure' || touch === 'not-sure') && !definiteRisks.includes('shape')) uncertainKeys.push('shapeUnsure');
+
+    const tipKeys = [...definiteRisks, ...uncertainKeys];
+
+    const verdictEl = document.getElementById('whisker-verdict');
+    const iconEl = document.getElementById('whisker-verdict-icon');
+    const titleEl = document.getElementById('whisker-verdict-title');
+    const textEl = document.getElementById('whisker-verdict-text');
+    const tipsEl = document.getElementById('whisker-tips');
+
+    const riskIcon = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 2 20h20L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>';
+    const okIcon = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+    if (definiteRisks.length > 0) {
+      verdictEl.className = 'whisker-verdict risk';
+      iconEl.innerHTML = riskIcon;
+      titleEl.textContent = "Your bowl setup may be causing whisker fatigue";
+      textEl.textContent = `${definiteRisks.length} thing${definiteRisks.length > 1 ? 's' : ''} in your current setup ${definiteRisks.length > 1 ? 'are' : 'is'} common triggers. Here's what to change, roughly in order of impact.`;
+    } else if (uncertainKeys.length > 0) {
+      verdictEl.className = 'whisker-verdict ok';
+      iconEl.innerHTML = okIcon;
+      titleEl.textContent = "Looking good — a couple of things worth double-checking";
+      textEl.textContent = "Nothing you answered points to whisker fatigue, but a few details were unclear. Quick checks below will confirm you're in the clear.";
+    } else {
+      verdictEl.className = 'whisker-verdict ok';
+      iconEl.innerHTML = okIcon;
+      titleEl.textContent = "Your bowl setup already looks whisker-friendly";
+      textEl.textContent = "Wide, shallow, non-plastic, and away from food or litter — that's exactly the setup that avoids whisker fatigue. Nothing to change here.";
+    }
+
+    tipsEl.innerHTML = tipKeys.map(buildWhiskerTip).join('');
+
+    const resultEl = document.getElementById('whisker-result');
+    resultEl.classList.add('visible');
+    resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  // Reset button inside the result card: clear inputs and go back to the calculator
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    weightInput.value = '';
+    errorEl.style.display = 'none';
+
+    // Restore defaults: adult / mixed diet
+    document.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
+    const defaultAge = document.querySelector('.choice[data-value="adult"]');
+    const defaultDiet = document.querySelector('.choice[data-value="mixed"]');
+    defaultAge.classList.add('selected');
+    defaultAge.querySelector('input').checked = true;
+    defaultDiet.classList.add('selected');
+    defaultDiet.querySelector('input').checked = true;
+
+    document.getElementById('result-section').classList.remove('visible');
+    const bowlFill = document.getElementById('bowl-fill');
+    bowlFill.setAttribute('y', 130);
+    bowlFill.setAttribute('height', 0);
+
+    ['dual-bowl-oz', 'dual-bowl-ml', 'dual-food-oz', 'dual-food-cans'].forEach(id => {
+      document.getElementById(id).textContent = '—';
+    });
+
+    lastResult = null;
+    document.getElementById('share-link-input').value = '';
+    document.getElementById('share-msg').textContent = '';
+
+    const calcSection = document.getElementById('calculator');
+    calcSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    weightInput.focus();
+  });
+
+  // ---------- Hydration & Litter Tracker ----------
+  (function () {
+    const STORAGE_KEY = 'purrhydrate_tracker_entries';
+
+    const THIRST_LABELS = {
+      '2': 'Much more thirst',
+      '1': 'Slightly more thirst',
+      '0': 'Normal thirst',
+      '-1': 'Slightly less thirst',
+      '-2': 'Much less thirst'
+    };
+    const URINATION_LABELS = {
+      normal: 'Normal urination',
+      more: 'Urinating more',
+      less: 'Urinating less',
+      straining: 'Straining to urinate',
+      blood: 'Blood in urine'
+    };
+    const BOWEL_LABELS = {
+      normal: 'Normal stool',
+      soft: 'Soft / loose stool',
+      diarrhea: 'Diarrhea',
+      constipation: 'Constipation',
+      none: 'No bowel movement observed'
+    };
+
+    function loadEntries() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : [];
+      } catch (err) {
+        console.error('Tracker: could not read saved entries', err);
+        return [];
+      }
+    }
+
+    function saveEntries(entries) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+        return true;
+      } catch (err) {
+        console.error('Tracker: could not save entries', err);
+        return false;
+      }
+    }
+
+    function sortedAscending(entries) {
+      return [...entries].sort((a, b) => a.date.localeCompare(b.date));
+    }
+    function sortedDescending(entries) {
+      return [...entries].sort((a, b) => b.date.localeCompare(a.date));
+    }
+
+    function formatDate(iso) {
+      const d = new Date(iso + 'T00:00:00');
+      if (isNaN(d)) return iso;
+      return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+
+    function buildChartSVG(entries) {
+      const width = 600, height = 160, padX = 24, padY = 20;
+      const chronological = sortedAscending(entries);
+
+      if (chronological.length < 2) {
+        return `<text x="${width / 2}" y="${height / 2}" text-anchor="middle" font-size="14" fill="#A9CFCB" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif">Log at least two days to see a trend line</text>`;
+      }
+
+      const usableW = width - padX * 2;
+      const usableH = height - padY * 2;
+      const scoreToY = (score) => padY + ((2 - score) / 4) * usableH;
+      const xStep = usableW / (chronological.length - 1);
+
+      const points = chronological.map((e, i) => ({
+        x: padX + i * xStep,
+        y: scoreToY(parseInt(e.thirst, 10)),
+        date: e.date
+      }));
+
+      const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+      const baselineY = scoreToY(0);
+
+      const circles = points.map(p => {
+        const extreme = Math.abs(scoreToY(0) - p.y) > usableH * 0.4;
+        return `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="${extreme ? '#DD7C58' : '#2F7A78'}" />`;
+      }).join('');
+
+      return `
+        <line x1="${padX}" y1="${baselineY.toFixed(1)}" x2="${width - padX}" y2="${baselineY.toFixed(1)}" stroke="#DCD2B9" stroke-width="1" stroke-dasharray="4 4" />
+        <path d="${linePath}" fill="none" stroke="#2F7A78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        ${circles}
+      `;
+    }
+
+    function renderChart(entries) {
+      document.getElementById('tracker-chart').innerHTML = buildChartSVG(entries);
+    }
+
+    function badgeClass(kind, value) {
+      if (kind === 'urination' && (value === 'straining' || value === 'blood')) return 'badge badge-warn';
+      if (kind === 'bowel' && (value === 'diarrhea' || value === 'constipation')) return 'badge badge-warn';
+      if (kind === 'thirst' && Math.abs(parseInt(value, 10)) === 2) return 'badge badge-warn';
+      if (kind === 'thirst' && Math.abs(parseInt(value, 10)) === 1) return 'badge badge-neutral';
+      return 'badge';
+    }
+
+    function renderEntries(entries) {
+      const wrap = document.getElementById('tracker-entries');
+      const emptyMsg = document.getElementById('tracker-empty-msg');
+
+      if (entries.length === 0) {
+        wrap.innerHTML = '';
+        emptyMsg.style.display = 'block';
+        return;
+      }
+      emptyMsg.style.display = 'none';
+
+      const rows = sortedDescending(entries).map(e => {
+        const notesHtml = e.notes ? `<div class="entry-notes">${escapeHtml(e.notes)}</div>` : '';
+        const amountHtml = e.amount ? ` · ${e.amount} fl oz` : '';
+        return `
+          <div class="tracker-entry" data-id="${e.id}">
+            <div class="entry-date">${formatDate(e.date)}</div>
+            <div>
+              <div class="entry-badges">
+                <span class="${badgeClass('thirst', e.thirst)}">${THIRST_LABELS[e.thirst]}${amountHtml}</span>
+                <span class="${badgeClass('urination', e.urination)}">${URINATION_LABELS[e.urination]}</span>
+                <span class="${badgeClass('bowel', e.bowel)}">${BOWEL_LABELS[e.bowel]}</span>
+              </div>
+              ${notesHtml}
+            </div>
+            <button type="button" class="entry-delete" data-delete-id="${e.id}">Delete</button>
+          </div>
+        `;
+      }).join('');
+
+      wrap.innerHTML = rows;
+
+      wrap.querySelectorAll('[data-delete-id]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-delete-id');
+          const updated = loadEntries().filter(e => String(e.id) !== String(id));
+          saveEntries(updated);
+          renderAll(updated);
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    function renderAlert(entries) {
+      const alertEl = document.getElementById('tracker-alert');
+      const iconEl = document.getElementById('tracker-alert-icon');
+      const titleEl = document.getElementById('tracker-alert-title');
+      const textEl = document.getElementById('tracker-alert-text');
+
+      if (entries.length === 0) {
+        alertEl.style.display = 'none';
+        return;
+      }
+
+      const chronological = sortedAscending(entries);
+      const last = chronological[chronological.length - 1];
+      const secondLast = chronological.length > 1 ? chronological[chronological.length - 2] : null;
+
+      const urgentIcon = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 2 20h20L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>';
+      const watchIcon = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+      if (last.urination === 'straining' || last.urination === 'blood') {
+        alertEl.style.display = 'flex';
+        alertEl.className = 'tracker-alert urgent';
+        iconEl.innerHTML = urgentIcon;
+        titleEl.textContent = 'Contact your vet promptly';
+        textEl.textContent = 'Straining to urinate or blood in the urine can point to a urinary blockage or infection, which can become serious quickly — especially in male cats. This is worth a same-day call to your vet, not a wait-and-see.';
+        return;
+      }
+
+      if (secondLast) {
+        const bothExtremeSameDirection = Math.abs(parseInt(last.thirst, 10)) === 2 &&
+          parseInt(last.thirst, 10) === parseInt(secondLast.thirst, 10);
+        const bothDiarrhea = last.bowel === 'diarrhea' && secondLast.bowel === 'diarrhea';
+
+        if (bothExtremeSameDirection || bothDiarrhea) {
+          alertEl.style.display = 'flex';
+          alertEl.className = 'tracker-alert watch';
+          iconEl.innerHTML = watchIcon;
+          titleEl.textContent = 'Worth keeping an eye on';
+          textEl.textContent = bothExtremeSameDirection
+            ? `Your last two entries both show ${parseInt(last.thirst, 10) > 0 ? 'a big increase' : 'a big drop'} in thirst. A short-lived change can be normal, but if it continues for another day or two, mention it to your vet.`
+            : "Diarrhea has shown up in your last two entries. If it continues past 24–48 hours, or your cat seems lethargic or stops eating, it's a good time to check in with your vet.";
+          return;
+        }
+      }
+
+      alertEl.style.display = 'none';
+    }
+
+    function renderAll(entries) {
+      renderEntries(entries);
+      renderChart(entries);
+      renderAlert(entries);
+    }
+
+    // ---- Form submission ----
+    const form = document.getElementById('tracker-form');
+    const dateInput = document.getElementById('tracker-date');
+    const formMsg = document.getElementById('tracker-form-msg');
+
+    // Default the date field to today
+    dateInput.value = new Date().toISOString().slice(0, 10);
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const date = dateInput.value;
+      if (!date) {
+        formMsg.textContent = 'Pick a date first.';
+        return;
+      }
+
+      const entry = {
+        id: Date.now() + Math.random().toString(36).slice(2, 7),
+        date,
+        thirst: document.getElementById('tracker-thirst').value,
+        amount: document.getElementById('tracker-amount').value
+          ? parseFloat(document.getElementById('tracker-amount').value)
+          : null,
+        urination: document.getElementById('tracker-urination').value,
+        bowel: document.getElementById('tracker-bowel').value,
+        notes: document.getElementById('tracker-notes').value.trim()
+      };
+
+      const entries = loadEntries();
+      // Replace any existing entry for the same date rather than duplicating
+      const withoutSameDate = entries.filter(e => e.date !== date);
+      withoutSameDate.push(entry);
+
+      const saved = saveEntries(withoutSameDate);
+      formMsg.textContent = saved ? 'Entry saved.' : "Couldn't save — your browser may be blocking local storage.";
+      setTimeout(() => { formMsg.textContent = ''; }, 2500);
+
+      document.getElementById('tracker-amount').value = '';
+      document.getElementById('tracker-notes').value = '';
+      document.getElementById('tracker-thirst').value = '0';
+      document.getElementById('tracker-urination').value = 'normal';
+      document.getElementById('tracker-bowel').value = 'normal';
+
+      renderAll(withoutSameDate);
+    });
+
+    // ---- Clear all ----
+    document.getElementById('tracker-clear-btn').addEventListener('click', () => {
+      if (loadEntries().length === 0) return;
+      if (confirm('Delete all logged entries in this browser? This can\'t be undone.')) {
+        saveEntries([]);
+        renderAll([]);
+      }
+    });
+
+    // ---- CSV export ----
+    document.getElementById('tracker-csv-btn').addEventListener('click', () => {
+      const entries = sortedAscending(loadEntries());
+      if (entries.length === 0) {
+        alert('No entries to export yet.');
+        return;
+      }
+      const header = ['Date', 'Thirst', 'Water (fl oz)', 'Urination', 'Bowel movement', 'Notes'];
+      const rows = entries.map(e => [
+        e.date,
+        THIRST_LABELS[e.thirst],
+        e.amount ?? '',
+        URINATION_LABELS[e.urination],
+        BOWEL_LABELS[e.bowel],
+        (e.notes || '').replace(/"/g, '""')
+      ]);
+      const csv = [header, ...rows]
+        .map(row => row.map(cell => `"${cell}"`).join(','))
+        .join('\r\n');
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `purrhydrate-tracker-${new Date().toISOString().slice(0, 10)}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    // ---- JSON backup (full-fidelity export for moving data between devices/browsers) ----
+    document.getElementById('tracker-json-export-btn').addEventListener('click', () => {
+      const entries = loadEntries();
+      if (entries.length === 0) {
+        alert('No entries to back up yet.');
+        return;
+      }
+      const payload = {
+        app: 'purrhydrate-tracker',
+        exportedAt: new Date().toISOString(),
+        entries
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `purrhydrate-tracker-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    // ---- JSON restore (import a backup, merging with whatever's already on this device) ----
+    const importInput = document.getElementById('tracker-json-import-input');
+    document.getElementById('tracker-json-import-btn').addEventListener('click', () => {
+      importInput.value = ''; // allow re-selecting the same file twice in a row
+      importInput.click();
+    });
+
+    importInput.addEventListener('change', () => {
+      const file = importInput.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        let parsed;
+        try {
+          parsed = JSON.parse(reader.result);
+        } catch (err) {
+          alert("That file doesn't look like a valid PurrHydrate backup (couldn't parse JSON).");
+          return;
+        }
+
+        // Accept either the wrapped {app, entries: [...]} format from our own export,
+        // or a bare array, in case someone hand-edits or generates one differently.
+        const importedEntries = Array.isArray(parsed) ? parsed : parsed.entries;
+
+        if (!Array.isArray(importedEntries)) {
+          alert("That file doesn't look like a valid PurrHydrate backup (no entries found).");
+          return;
+        }
+
+        const validEntries = importedEntries.filter(e =>
+          e && typeof e === 'object' && typeof e.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.date)
+        );
+
+        if (validEntries.length === 0) {
+          alert("That file didn't contain any entries in a format we recognize.");
+          return;
+        }
+
+        const existing = loadEntries();
+        const existingDates = new Set(existing.map(e => e.date));
+        const newDates = validEntries.filter(e => !existingDates.has(e.date)).length;
+        const overwriteDates = validEntries.length - newDates;
+
+        const confirmMsg = `Import ${validEntries.length} entr${validEntries.length === 1 ? 'y' : 'ies'}? ` +
+          `${newDates} new` + (overwriteDates > 0 ? `, ${overwriteDates} will overwrite entries already logged for the same date.` : '.');
+
+        if (!confirm(confirmMsg)) return;
+
+        // Imported entries win on date conflicts — assume the file is the more complete/recent record.
+        const merged = existing.filter(e => !validEntries.some(v => v.date === e.date));
+        validEntries.forEach(v => {
+          merged.push({
+            id: v.id || (Date.now() + Math.random().toString(36).slice(2, 7)),
+            date: v.date,
+            thirst: v.thirst ?? '0',
+            amount: v.amount ?? null,
+            urination: v.urination || 'normal',
+            bowel: v.bowel || 'normal',
+            notes: v.notes || ''
+          });
+        });
+
+        saveEntries(merged);
+        renderAll(merged);
+        alert(`Imported ${validEntries.length} entr${validEntries.length === 1 ? 'y' : 'ies'} successfully.`);
+      };
+      reader.onerror = () => alert("Couldn't read that file — please try again.");
+      reader.readAsText(file);
+    });
+
+    // ---- Print / Save as PDF ----
+    document.getElementById('tracker-print-btn').addEventListener('click', () => {
+      const entries = sortedAscending(loadEntries());
+      if (entries.length === 0) {
+        alert('No entries to print yet — add at least one first.');
+        return;
+      }
+
+      const first = entries[0].date;
+      const last = entries[entries.length - 1].date;
+      const meta = `${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} · ${formatDate(first)} – ${formatDate(last)} · generated ${new Date().toLocaleDateString()}`;
+
+      const rows = entries.map(e => `
+        <tr>
+          <td>${formatDate(e.date)}</td>
+          <td>${THIRST_LABELS[e.thirst]}</td>
+          <td>${e.amount ?? '—'}</td>
+          <td>${URINATION_LABELS[e.urination]}</td>
+          <td>${BOWEL_LABELS[e.bowel]}</td>
+          <td>${escapeHtml(e.notes || '')}</td>
+        </tr>
+      `).join('');
+
+      document.getElementById('print-area').innerHTML = `
+        <h1>PurrHydrate — Hydration &amp; Litter Log</h1>
+        <div class="print-meta">${meta}</div>
+        <svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">${buildChartSVG(entries)}</svg>
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Thirst</th><th>Water (fl oz)</th><th>Urination</th><th>Bowel movement</th><th>Notes</th></tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      `;
+
+      printCuratedReport();
+    });
+
+    // ---- Initial render ----
+    renderAll(loadEntries());
+  })();
+
+  // ---------- Offline support (PWA service worker) ----------
+  // Registering a service worker requires a secure context (HTTPS or localhost) —
+  // it's a no-op on file:// or plain HTTP, so this is safe to leave in everywhere.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch((err) => {
+        console.log('PurrHydrate: offline support unavailable in this context', err.message);
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
