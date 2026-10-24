@@ -28,7 +28,10 @@
 <meta name="twitter:image" content="https://justpurrhydrate.com/og-image.png">
 
 <!-- Favicon: teal water-drop cat mark, inline so no separate file is required -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 4C11 4 5 12 5 20c0 8.5 6.5 16 15 16s15-7.5 15-16C35 12 29 4 20 4Z' fill='%232F7A78'/%3E%3Cpath d='M13 15c1.5-2 3-3 3-3s-1 2.5-0.5 4.5C16 18 17.5 19 20 19s4-1 4.5-2.5C25 14.5 24 12 24 12s1.5 1 3 3' stroke='%23FAF7F1' stroke-width='1.4' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='16.5' cy='21' r='1.3' fill='%23FAF7F1'/%3E%3Ccircle cx='23.5' cy='21' r='1.3' fill='%23FAF7F1'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23FAF7F1'/%3E%3Cpath d='M20 5C12 5 7 12 7 19c0 7.5 5.8 14 13 14s13-6.5 13-14C33 12 28 5 20 5Z' fill='%232F7A78'/%3E%3Cpath d='M14 15.5c1.3-1.8 2.6-2.6 2.6-2.6s-0.9 2.2-0.4 4c0.5 1.3 1.8 2.3 4 2.3s3.5-1 4-2.3c0.5-1.8-0.4-4-0.4-4s1.3 0.8 2.6 2.6' stroke='%23FAF7F1' stroke-width='1.3' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='16.8' cy='20.5' r='1.2' fill='%23FAF7F1'/%3E%3Ccircle cx='23.2' cy='20.5' r='1.2' fill='%23FAF7F1'/%3E%3C/svg%3E">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#2F7A78">
@@ -1169,6 +1172,55 @@
     .tracker-entry .entry-delete { justify-self: flex-start; }
     .vet-warning { flex-direction: column; }
   }
+
+  /* ---------- Guides section (homepage cards) ---------- */
+  .guides-section { padding: 10px 0 60px; }
+  .guides-section h2 { font-size: 1.7rem; }
+  .guides-section .section-head p { color: var(--ink-soft); margin-top: 10px; }
+  .guides-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .guide-card {
+    display: block;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    padding: 22px 22px 20px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .guide-card:hover, .guide-card:focus-visible {
+    border-color: var(--teal);
+    box-shadow: 0 4px 12px rgba(47, 122, 120, 0.15);
+    transform: translateY(-2px);
+  }
+  .guide-card strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--teal-deep);
+  }
+  .guide-card span.desc {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+  .guide-card span.go {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--teal);
+  }
+  .guides-more { margin-top: 20px; }
+  .guides-more a { font-weight: 600; color: var(--teal-deep); }
+  @media (max-width: 640px) {
+    .guides-grid { grid-template-columns: 1fr; }
+  }
 </style>
 <!-- Structured data: FAQ (mirrors the visible FAQ section) -->
 <script type="application/ld+json">
@@ -1257,11 +1309,13 @@
 <header class="site">
   <div class="wrap">
     <div class="logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4C11 4 5 12 5 20c0 8.5 6.5 16 15 16s15-7.5 15-16C35 12 29 4 20 4Z" fill="#2F7A78"/>
-        <path d="M13 15c1.5-2 3-3 3-3s-1 2.5-0.5 4.5C16 18 17.5 19 20 19s4-1 4.5-2.5C25 14.5 24 12 24 12s1.5 1 3 3" stroke="#FAF7F1" stroke-width="1.4" stroke-linecap="round" fill="none"/>
-        <circle cx="16.5" cy="21" r="1.3" fill="#FAF7F1"/>
-        <circle cx="23.5" cy="21" r="1.3" fill="#FAF7F1"/>
+      <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="192" height="192" rx="40" fill="#1F9AA8"/>
+        <polygon points="36,96 46,28 94,64" fill="#FFFFFF"/>
+        <polygon points="156,96 146,28 98,64" fill="#FFFFFF"/>
+        <ellipse cx="96" cy="112" rx="62" ry="56" fill="#FFFFFF"/>
+        <path d="M96 80 C96 80 72 108 72 124 a24 24 0 0 0 48 0 C120 108 96 80 96 80Z" fill="#1F9AA8"/>
+        <path d="M86 123 a10 10 0 0 0 8 10" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
       </svg>
       PurrHydrate
     </div>
@@ -1273,6 +1327,7 @@
       <a href="#whisker-check">Bowl check</a>
       <a href="#tracker">Tracker</a>
       <a href="#faq">FAQ</a>
+      <a href="guides.html">Guides</a>
     </nav>
   </div>
 </header>
@@ -1871,6 +1926,38 @@
 
 <div id="print-area"></div>
 
+<section class="guides-section" id="guides">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Cat hydration guides</h2>
+      <p>Plain-language guides to help you understand your cat's water needs and what to do about changes.</p>
+    </div>
+    <div class="guides-grid">
+      <a class="guide-card" href="cat-dehydration-signs-chart.html">
+        <strong>Cat dehydration chart: signs and when to see a vet</strong>
+        <span class="desc">What a dehydrated cat looks like, simple checks you can do at home, and which signs mean you should call your vet.</span>
+        <span class="go">Read the guide &rarr;</span>
+      </a>
+      <a class="guide-card" href="how-much-water-should-a-cat-drink.html">
+        <strong>How much water should a cat drink per day?</strong>
+        <span class="desc">A simple guideline, a weight chart, and how your cat's food changes the amount.</span>
+        <span class="go">Read the guide &rarr;</span>
+      </a>
+      <a class="guide-card" href="why-isnt-my-cat-drinking-water.html">
+        <strong>Why isn't my cat drinking water?</strong>
+        <span class="desc">Common reasons a cat drinks very little, easy fixes to try, and when it is a sign of something more.</span>
+        <span class="go">Read the guide &rarr;</span>
+      </a>
+      <a class="guide-card" href="wet-food-vs-dry-food-cat-hydration.html">
+        <strong>Wet food vs dry food for hydration</strong>
+        <span class="desc">How the moisture in wet and dry food compares, and practical ways to add more water to your cat's diet.</span>
+        <span class="go">Read the guide &rarr;</span>
+      </a>
+    </div>
+    <p class="guides-more"><a href="guides.html">See all guides &rarr;</a></p>
+  </div>
+</section>
+
 <section class="faq-section" id="faq">
   <div class="wrap">
     <div class="section-head">
@@ -1984,8 +2071,13 @@
 <footer class="site">
   <div class="wrap">
     <div class="logo" style="font-size:1.05rem;">
-      <svg viewBox="0 0 40 40" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4C11 4 5 12 5 20c0 8.5 6.5 16 15 16s15-7.5 15-16C35 12 29 4 20 4Z" fill="#2F7A78"/>
+      <svg viewBox="0 0 192 192" width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="192" height="192" rx="40" fill="#1F9AA8"/>
+        <polygon points="36,96 46,28 94,64" fill="#FFFFFF"/>
+        <polygon points="156,96 146,28 98,64" fill="#FFFFFF"/>
+        <ellipse cx="96" cy="112" rx="62" ry="56" fill="#FFFFFF"/>
+        <path d="M96 80 C96 80 72 108 72 124 a24 24 0 0 0 48 0 C120 108 96 80 96 80Z" fill="#1F9AA8"/>
+        <path d="M86 123 a10 10 0 0 0 8 10" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
       </svg>
       PurrHydrate
     </div>
