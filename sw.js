@@ -4,7 +4,7 @@
 // The tracker's data itself lives in localStorage, which already works offline —
 // this file is only responsible for making the PAGE ITSELF load without a network.
 
-const CACHE_NAME = 'purrhydrate-v8';
+const CACHE_NAME = 'purrhydrate-v11';
 
 // Everything needed to browse the site with no network. Google Fonts are
 // intentionally left out — if they're unavailable offline, the page just
@@ -30,6 +30,10 @@ const APP_SHELL = [
   './how-much-water-should-a-cat-drink.html',
   './how-to-hydrate-a-cat-at-home.html',
   './cat-dehydration-signs-chart.html',
+  './cat-dehydration-night-weekend.html',
+  './dehydration-in-kittens.html',
+  './when-to-call-the-vet-cat-water.html',
+  './cat-dehydration-checklist.html',
   './manifest.json',
   './favicon.ico',
   './favicon.svg',
